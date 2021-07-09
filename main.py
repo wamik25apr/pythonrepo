@@ -14,15 +14,30 @@
 # test2='this is a good thing'
 # print(test2.find('this'))
 # print(test2.replace('this','that'))
-import datetime
-currentDateTime = datetime.datetime.now()
-date = currentDateTime.date()
-year = date.strftime("%Y")
-born=input('what year you born of? ' )
-print('your age is : ' + str((int(year) - int(born))) )
-
-
-
+# import datetime
+# currentDateTime = datetime.datetime.now()
+# date = currentDateTime.date()
+# year = date.strftime("%Y")
+# born=input('what year you born of? ' )
+# print('your age is : ' + str((int(year) - int(born))) )
+# user_name=input('please enter your username: ')
+# passward=input('please enter your passward: ')
+# hidden_passward = '*' * len(passward)
+# print(f'the passward  for  {user_name} is {hidden_passward} and the length {len(passward)} long')
+basket = ['ball','bat','gloves']
+print(basket)
+basket.append('pad')
+print(basket)
+basket.insert(0,'baby')
+print(basket)
+basket.pop()
+print(basket)
+basket.pop(0)
+print(basket)
+basket.remove('bat')
+print(basket)
+basket.clear()
+print(basket)
 
 
 
