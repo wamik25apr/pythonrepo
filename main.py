@@ -24,21 +24,29 @@
 # passward=input('please enter your passward: ')
 # hidden_passward = '*' * len(passward)
 # print(f'the passward  for  {user_name} is {hidden_passward} and the length {len(passward)} long')
-basket = ['ball','bat','gloves']
-print(basket)
-basket.append('pad')
-print(basket)
-basket.insert(0,'baby')
-print(basket)
-basket.pop()
-print(basket)
-basket.pop(0)
-print(basket)
-basket.remove('bat')
-print(basket)
-basket.clear()
-print(basket)
-
-
-
-
+# basket = ['ball','bat','gloves']
+# print(basket)
+# basket.append('pad')
+# print(basket)
+# basket.insert(0,'baby')
+# print(basket)
+# basket.pop()
+# print(basket)
+# basket.pop(0)
+# print(basket)
+# basket.remove('bat')
+# print(basket)
+# basket.clear()
+# print(basket)
+# basket=[1,2,3,'wamik']
+# print('wamik' in basket)
+# print(basket.index(1))
+# print(basket.count('wamik'))
+# print(range(1,100))
+# print(list(range(1,100,2)))
+# newlist=' testing '.join(['wamik','hossain','raju'])
+# print(newlist)
+# a,*b,c=[1,2,5,5,3]
+# print(a)
+# print(b)
+# print(c)
