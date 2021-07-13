@@ -140,6 +140,91 @@
 #             list1.append(item)
 #     return max(list1)
 # print(highest_even([1,2,3,4,5,6]))
+
+# print 'this';
+
+# class Test:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# player1=Test('raj',24)
+# player1.hobby='football'
+# print(player1.age)
+# print(player1.hobby)
+
+#Given the below class:
+# class Cat:
+#     species = 'mammal'
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+    
+        
+
+
+    
+    
+
+
+# # 1 Instantiate the Cat object with 3 cats
+# cat1=Cat('wamik',20)
+# cat2=Cat('karishma',25)
+# cat3=Cat('raju',25)
+
+
+# # 2 Create a function that finds the oldest cat
+# def oldest_cat(*args):
+#     if max(args):
+#         return args.
+# print(f'the  oldest cat is {oldest_cat(cat1.age,cat2.age,cat3.age)}')
+    
+
+
+# # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
+
+class Pets():
+    animals = []
+    def __init__(self, animals):
+        self.animals = animals
+
+    def walk(self):
+        for animal in self.animals:
+            print(animal.walk())
+
+class Cat():
+    is_lazy = True
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def walk(self):
+        return f'{self.name} is just walking around'
+
+class Simon(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+class Sally(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+#1 Add nother Cat
+class Suzy(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+#2 Create a list of all of the pets (create 3 cat instances from the above)
+my_cats = [Simon('Simon', 4), Sally('Sally', 21), Suzy('Suzy', 1)]
+
+#3 Instantiate the Pet class with all your cats
+my_pets = Pets(my_cats)
+
+#4 Output all of the cats singing using the my_pets instance
+my_pets.walk()
+
+
+
             
 
 
