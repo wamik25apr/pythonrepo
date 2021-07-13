@@ -268,6 +268,47 @@ from functools import reduce
 # print(reduce(accumu,(my_numbers+scores)))
 # print(reduce(lambda acc,item: acc+item,(my_numbers+scores)))
 
+# scores = [2, 20, 65, 19, 76, 100, 88]
+# print(list(map(lambda item: pow(item,2),scores)))
+
+# a=[(1,2),(2,3)]
+# print(sorted(list(map(lambda item:item[1],a))))
+
+# mylist=[char for char in 'hello']
+# mylist1=[pow(num,1) for num in range(1,100) if num%2==0]
+# print(mylist1)
+
+
+# Create an @authenticated decorator that only allows the function to run is user1 has 'valid' set to True:
+user1 = {
+    'name': 'Sorna',
+    'valid': True #changing this will either run or not run the message_friends function.
+}
+
+def authenticated(fn):
+  # code here
+  def wrapper(*arg,**kawrs):
+      if kawrs.keys:
+          return fn(*arg,**kawrs)
+      else:
+          break
+    return wrapper
+
+@authenticated
+def message_friends(user):
+    print('message has been sent')
+
+message_friends(user1)
+
+
+
+
+
+
+
+
+
+
 
 
             
