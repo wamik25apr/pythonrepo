@@ -182,46 +182,91 @@
 
 # # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
 
-class Pets():
-    animals = []
-    def __init__(self, animals):
-        self.animals = animals
+# class Pets():
+#     animals = []
+#     def __init__(self, animals):
+#         self.animals = animals
 
-    def walk(self):
-        for animal in self.animals:
-            print(animal.walk())
+#     def walk(self):
+#         for animal in self.animals:
+#             print(animal.walk())
 
-class Cat():
-    is_lazy = True
+# class Cat():
+#     is_lazy = True
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def walk(self):
-        return f'{self.name} is just walking around'
+#     def walk(self):
+#         return f'{self.name} is just walking around'
 
-class Simon(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
+# class Simon(Cat):
+#     def sing(self, sounds):
+#         return f'{sounds}'
 
-class Sally(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
+# class Sally(Cat):
+#     def sing(self, sounds):
+#         return f'{sounds}'
 
-#1 Add nother Cat
-class Suzy(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
+# #1 Add nother Cat
+# class Suzy(Cat):
+#     def sing(self, sounds):
+#         return f'{sounds}'
 
-#2 Create a list of all of the pets (create 3 cat instances from the above)
-my_cats = [Simon('Simon', 4), Sally('Sally', 21), Suzy('Suzy', 1)]
+# #2 Create a list of all of the pets (create 3 cat instances from the above)
+# my_cats = [Simon('Simon', 4), Sally('Sally', 21), Suzy('Suzy', 1)]
 
-#3 Instantiate the Pet class with all your cats
-my_pets = Pets(my_cats)
+# #3 Instantiate the Pet class with all your cats
+# my_pets = Pets(my_cats)
 
-#4 Output all of the cats singing using the my_pets instance
-my_pets.walk()
+# #4 Output all of the cats singing using the my_pets instance
+# my_pets.walk()
+
+from functools import reduce
+
+# #1 Capitalize all of the pet names and print the list
+# my_pets = ['sisi', 'bibi', 'titi', 'carla']
+
+# def capitalize_pet(pet):
+#     return pet.capitalize()
+    
+# print(list(map(capitalize_pet,my_pets)))
+
+# print(list(map(lambda pet: pet.capitalize(),my_pets)))
+
+    
+
+
+
+
+# #2 Zip the 2 lists into a list of tuples, but sort the numbers from lowest to highest.
+# my_strings = ['a', 'b', 'c', 'd', 'e']
+# my_numbers = [5,4,3,2,1]
+
+# print(list(zip(my_strings,sorted(my_numbers))))
+
+
+
+
+
+
+# # 3 Filter the scores that pass over 50%
+# scores = [73, 20, 65, 19, 76, 100, 88]
+# def score_above_50(score):
+#     return score>50
+# print(sorted(list(filter(score_above_50,scores))))
+# print(sorted(list(filter(lambda score: score>50,scores))))
+
+
+
+# # #4 Combine all of the numbers that are in a list on this file using reduce (my_numbers and scores). What is the total?
+# my_numbers = [5,4,3,2,1]
+# scores = [73, 20, 65, 19, 76, 100, 88]
+# def accumu(acc,item):
+#     return acc+item
+# print(reduce(accumu,(my_numbers+scores)))
+# print(reduce(lambda acc,item: acc+item,(my_numbers+scores)))
 
 
 
